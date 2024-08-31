@@ -1,0 +1,27 @@
+{
+"Test1": {
+  "title": "example",
+  "definition": "something",
+  "language": "JavaScript",
+  "time-submitted": "MM/DD/YYYY - 12:34 PM or something",
+  "uid": "",
+  "firebaseKey": ""
+},
+"Test2": {
+  "title": "example",
+  "definition": "something",
+  "language": "JavaScript",
+  "time-submitted": "MM/DD/YYYY - 12:34 PM or something",
+  "uid": "",
+  "firebaseKey": ""
+},
+"Test3": {
+  "title": "example",
+  "definition": "something",
+  "language": "JavaScript",
+  "time-submitted": "MM/DD/YYYY - 12:34 PM or something",
+  "uid": "",
+  "firebaseKey": ""
+}
+
+}
