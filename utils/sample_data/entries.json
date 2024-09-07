@@ -3,7 +3,7 @@
   "title": "example",
   "definition": "something",
   "language": "JavaScript",
-  "time-submitted": "MM/DD/YYYY - 12:34 PM or something",
+  "timeSubmitted": "MM/DD/YYYY - 12:34 PM or something",
   "uid": "",
   "firebaseKey": ""
 },
@@ -11,7 +11,7 @@
   "title": "example",
   "definition": "something",
   "language": "JavaScript",
-  "time-submitted": "MM/DD/YYYY - 12:34 PM or something",
+  "timeSubmitted": "MM/DD/YYYY - 12:34 PM or something",
   "uid": "",
   "firebaseKey": ""
 },
@@ -19,7 +19,7 @@
   "title": "example",
   "definition": "something",
   "language": "JavaScript",
-  "time-submitted": "MM/DD/YYYY - 12:34 PM or something",
+  "timeSubmitted": "MM/DD/YYYY - 12:34 PM or something",
   "uid": "",
   "firebaseKey": ""
 }
