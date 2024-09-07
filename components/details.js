@@ -3,16 +3,13 @@ import { deleteVocab, endpoint, getSingleVocab } from '../api/vocabData';
 import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
 
-// TODO Get data for viewVocab
-
 // const getVocabDetails = (firebaseKey) => new Promise((resolve, reject) => {
 //   // GET SINGLE Vocab
-//   getSingleVocab(firebaseKey).then((Vocabitemect) => { // returns single Vocab itemect
-//     getSingleAuthor(Vocabitemect.firebaseKey) // we nest this promise so that we can use the Vocab itemect
-//       .then((authoritemect) => resolve({ ...Vocabitemect, authoritemect }));
+//   getSingleVocab(firebaseKey).then((Vocabitem) => { // returns single Vocab item
+//     getSingleAuthor(Vocabitem.firebaseKey) // nest this promise to use the second item
+//       .then((authoritem) => resolve({ ...Vocabitem, authoritem }));
 //   }).catch(reject);
-//   // GET AUTHOR
-//   // Create an itemect that has Vocab data and an itemect named authoritemect
+
 // });
 
 const getVocabDetails = async (firebaseKey) => { // the async keyword let's JS know this is asynchronous function (promise)
