@@ -4,7 +4,7 @@ import renderToDOM from '../utils/renderToDom';
 
 const endpoint = client.databaseURL;
 
-// FIXME:  GET ALL VocabS
+// GET ALL Vocabs
 const getVocabs = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
@@ -23,7 +23,7 @@ const getVocabs = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME:  GET Python VocabS
+// GET Python Vocabs
 const getPythonVocabs = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries.json?orderBy="language"&equalTo="Python"&orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
@@ -42,7 +42,7 @@ const getPythonVocabs = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME:  GET JavaScript VocabS
+// GET JavaScript Vocabs
 const getJavaScriptVocabs = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries.json?orderBy="language"&equalTo="JavaScript"&orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
@@ -61,7 +61,7 @@ const getJavaScriptVocabs = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME:  GET Other VocabS
+// GET Other Vocabs
 const getOtherVocabs = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries.json?orderBy="language"&equalTo="Other"&orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
@@ -80,7 +80,7 @@ const getOtherVocabs = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME: CREATE Vocab
+// CREATE Vocab
 const createVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries.json`, {
     method: 'POST',
@@ -94,7 +94,7 @@ const createVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME: GET SINGLE Vocab
+// GET SINGLE Vocab
 const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries/${firebaseKey}.json`, {
     method: 'GET',
@@ -107,7 +107,7 @@ const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME: DELETE Vocab
+// DELETE Vocab
 const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries/${firebaseKey}.json`, {
     method: 'DELETE',
@@ -120,7 +120,7 @@ const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// FIXME: UPDATE Vocab
+// UPDATE Vocab
 const updateVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries/${payload.firebaseKey}.json`, {
     method: 'PATCH',
