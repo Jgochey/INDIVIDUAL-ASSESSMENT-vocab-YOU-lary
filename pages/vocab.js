@@ -1,8 +1,4 @@
 // import clearDom from "../utils/clearDom";
 // import renderToDOM from "../utils/renderToDom";
 
-// emptycards
-
-// uhhhhhh
-
-// showcards
+// Moved everything in this file elsewhere, maybe delete?
