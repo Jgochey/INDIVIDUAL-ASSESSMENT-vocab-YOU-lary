@@ -8,25 +8,28 @@ import {
 
 // navigation events
 const navigationEvents = () => {
-  // TODO: ALL vocabS
+  // Show all Vocabs
   document.querySelector('#all-entries').addEventListener('click', () => {
     getVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
-    // console.warn('CLICKED ALL vocabS');
+    
   });
 
+  // Show JavaScript Vocabs
   document.querySelector('#js-entries').addEventListener('click', () => {
     getJavaScriptVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
-    // console.warn('CLICKED ALL vocabS');
+  
   });
 
+  // Show Python Vocabs
   document.querySelector('#python-entries').addEventListener('click', () => {
     getPythonVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
-    // console.warn('CLICKED ALL vocabS');
+  
   });
 
+  // Show Other Vocabs
   document.querySelector('#other-entries').addEventListener('click', () => {
     getOtherVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
-    // console.warn('CLICKED ALL vocabS');
+  
   });
 
   // STRETCH: SEARCH
