@@ -11,25 +11,21 @@ const navigationEvents = () => {
   // Show all Vocabs
   document.querySelector('#all-entries').addEventListener('click', () => {
     getVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
-    
   });
 
   // Show JavaScript Vocabs
   document.querySelector('#js-entries').addEventListener('click', () => {
     getJavaScriptVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
-  
   });
 
   // Show Python Vocabs
   document.querySelector('#python-entries').addEventListener('click', () => {
     getPythonVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
-  
   });
 
   // Show Other Vocabs
   document.querySelector('#other-entries').addEventListener('click', () => {
     getOtherVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
-  
   });
 
   // STRETCH: SEARCH
