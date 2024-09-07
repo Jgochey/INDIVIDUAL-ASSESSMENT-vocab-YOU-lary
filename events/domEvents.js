@@ -14,7 +14,7 @@ const domEvents = () => {
       getVocabDetails(firebaseKey).then(viewVocab);
     }
 
-    // FIXME: ADD CLICK EVENT FOR DELETING AN vocab
+    // CLICK EVENT FOR DELETING Vocab
     if (e.target.id.includes('delete-Vocab-btn')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete?')) {
@@ -26,11 +26,11 @@ const domEvents = () => {
       }
     }
 
-    // // FIXME: ADD CLICK EVENT FOR SHOWING FORM FOR ADDING AN vocab
+    // // CLICK EVENT FOR add vocab form
     // if (e.target.id.includes('add-Vocab-btn')) {
     //   addVocabForm();
     // }
-    // FIXME: ADD CLICK EVENT FOR EDITING AN vocab
+    // CLICK EVENT FOR EDITING vocab
     if (e.target.id.includes('update-Vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
 
