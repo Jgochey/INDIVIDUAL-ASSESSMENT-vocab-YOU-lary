@@ -9,7 +9,7 @@ import getTimeStamp from '../components/getTimeStamp';
 const formEvents = () => {
   document.querySelector('#cards').addEventListener('submit', (e) => {
     e.preventDefault();
-    // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A Vocab
+    // CLICK EVENT FOR SUBMITTING FORM FOR ADDING A Vocab
     if (e.target.id.includes('submit-Vocab')) {
       const payload = {
         title: document.querySelector('#title').value,
@@ -28,7 +28,7 @@ const formEvents = () => {
       });
     }
 
-    // TODO: CLICK EVENT FOR EDITING A Vocab
+    // CLICK EVENT FOR EDITING A Vocab
     if (e.target.id.includes('update-Vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
