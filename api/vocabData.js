@@ -137,9 +137,6 @@ const updateVocab = (payload) => new Promise((resolve, reject) => {
 const showVocabs = (array) => {
   clearDom();
 
-  // const btnString = '<button class="btn btn-success btn-lg mb-4" id="add-Vocab-btn">Add A Vocab</button>';
-  // renderToDOM('#add-button', btnString);
-
   let domString = '';
   array.forEach((item) => {
     domString += `

@@ -15,8 +15,6 @@ const logoutButton = () => {
     document.querySelector('#welcome').style.display = 'none';
     document.querySelector('#google-auth').style.backgroundColor = 'red';
     document.querySelector('#google-auth').style.border = 'none';
-    //     // document.querySelector('#google-auth').style.position = 'abosolute';
-    //     // document.querySelector('#google-auth').style.alignSelf = 'right';
     getVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
   }
 };
