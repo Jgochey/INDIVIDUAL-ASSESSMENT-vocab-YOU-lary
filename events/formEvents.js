@@ -4,8 +4,6 @@ import {
 } from '../api/vocabData';
 import getTimeStamp from '../components/getTimeStamp';
 
-// const userID = `${firebase.auth().currentUser.uid}`;
-
 const formEvents = () => {
   document.querySelector('#cards').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -41,7 +39,7 @@ const formEvents = () => {
       };
 
       updateVocab(payload).then(() => {
-        getVocabs().then(showVocabs);
+        getVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
       });
     }
   });
