@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+import firebase from 'firebase';
 import {
   getVocabs, getSingleVocab, showVocabs, deleteVocab
 } from '../api/vocabData';
@@ -21,7 +22,7 @@ const domEvents = () => {
         const [, firebaseKey] = e.target.id.split('--');
 
         deleteVocab(firebaseKey).then(() => {
-          getVocabs().then(showVocabs);
+          getVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
         });
       }
     }

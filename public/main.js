@@ -15,31 +15,17 @@ import navigationEvents from '../events/navigationEvents';
 const init = () => {
   document.querySelector('#app').innerHTML = `
 
-    <h1>Welcome to Vocab-YOU-lary!</h1>
+    <h1 id="welcome">Welcome to Vocab-YOU-lary!</h1>
 
     <hr />
   `;
   console.warn('YOU ARE UP AND RUNNING!');
 
   navBar();
-
   ViewDirectorBasedOnUserAuthStatus();
-
   formEvents();
-
   domEvents();
-
   navigationEvents();
-
-  // <button class="btn btn-danger" id="click-me">Login</button><br />
-
-  // document
-  //   .querySelector('#click-me')
-  //   .addEventListener('click', () => console.warn('You clicked that button!'),
-  //     ViewDirectorBasedOnUserAuthStatus());
-
-  // USE WITH FIREBASE AUTH
-  // ViewDirectorBasedOnUserAuthStatus();
 };
 
 init();

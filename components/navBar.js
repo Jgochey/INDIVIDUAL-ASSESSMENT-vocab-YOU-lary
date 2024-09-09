@@ -35,10 +35,15 @@ const navBar = () => {
               aria-label="Search"
             />
             </li>
-          </ul>
+                      <li>
           <span class="navbar-text">
-            <div id="logout-button"></div>
+          
+            <button id="navbarLogout" class="btn btn-danger">SIGNOUT</button>
+         
           </span>
+          </li>
+          </ul>
+
         </div>
         </div>
       </nav>`;
