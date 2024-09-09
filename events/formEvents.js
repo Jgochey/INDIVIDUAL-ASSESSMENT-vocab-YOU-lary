@@ -6,6 +6,7 @@ import getTimeStamp from '../components/getTimeStamp';
 
 const formEvents = () => {
   document.querySelector('#cards').addEventListener('submit', (e) => {
+    e.stopImmediatePropagation();
     e.preventDefault();
     // CLICK EVENT FOR SUBMITTING FORM FOR ADDING A Vocab
     if (e.target.id.includes('submit-Vocab')) {
@@ -21,7 +22,7 @@ const formEvents = () => {
         const patchPayload = { firebaseKey: name };
 
         updateVocab(patchPayload).then(() => {
-          getVocabs(`${firebase.auth().currentUser.uid}`).then((Vocabs) => showVocabs(Vocabs));
+          getVocabs(`${firebase.auth().currentUser.uid}`).then(showVocabs);
         });
       });
     }

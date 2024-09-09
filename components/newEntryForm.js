@@ -16,7 +16,7 @@ const addVocabForm = (obj = {}) => {
       </div>
 
         <label for="language">Select Language or Tech</label>
-      <div class="form-floating mb-3">
+        <div class="form-floating mb-3">
         <select class="form-select" id="language" aria-label="Default select example" required>
           <option value="JavaScript">JavaScript</option>
           <option value="Python">Python</option>
@@ -32,8 +32,3 @@ const addVocabForm = (obj = {}) => {
 };
 
 export default addVocabForm;
-
-/* <div class="form-group">
-<label for="definition">Language/Tech</label>
-<input type="text" class="form-control" placeholder="Enter Vocab Language or Tech" id="language">${obj.language || ''}</input>
-</div> */
